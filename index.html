@@ -16,9 +16,15 @@
               href="resources\material-design-light\material.min.css">
         <script src="resources\material-design-light\material.min.js"></script>
 
+        <!-- css styling centering the load more button -->
+        <style>
+            .center{text-align:center;padding: 10px;}
+        </style>
+
         <title>Simiyu Online Accessesories</title>
     </head>
     <body>
+
         <!-- application header div content -->
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
             <header class="mdl-layout__header">
@@ -26,12 +32,26 @@
                     <span class="mdl-layout-title">Simiyu Online Accessesories</span>
                     <div class="mdl-layout-spacer"></div>
                     <nav class="mdl-navigation">
+                        <!-- rfresh button with ripple effect -->
                         <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
                             Refresh
                         </button>
                     </nav>
                 </div>
             </header>
+
+            <!-- main application content -->
+            <main class="mdl-layout__content">
+                <div class="mdl-grid">
+                    <!-- our dynamic data -->
+                </div>
+                <div class="center">
+                     <button
+                      class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
+                           Show More
+                    </button>
+                </div>
+            </main>
 
         </div>
     </body>
